@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Referral - IGENZ Miner</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+    }
+    .ref-link {
+      background-color: #333;
+      padding: 12px;
+      border-radius: 10px;
+      margin: 20px 0;
+      word-break: break-all;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #00d09c;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Undang Teman</h2>
+    <p>Dapatkan <strong>+100 IGENZ Poin</strong> setiap kali teman lo daftar!</p>
+    <div class="ref-link" id="refLink">https://t.me/IGENZMinerBot?start=ref123</div>
+    <button onclick="copyLink()">Copy Link</button>
+  </div>
+
+  <script>
+    function copyLink() {
+      const refLink = document.getElementById('refLink');
+      navigator.clipboard.writeText(refLink.textContent).then(() => {
+        alert('Link berhasil disalin!');
+      });
+    }
+  </script>
+</body>
+</html>
